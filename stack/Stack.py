@@ -21,3 +21,11 @@ class Stack:
         node = self.top
         self.top = node.next
         return node.data
+
+    def peek(self):
+        if self.top is None:
+            return None
+        return self.top.data
+
+    def is_empty(self):
+        return self.top is None
