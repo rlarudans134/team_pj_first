@@ -1,7 +1,7 @@
 import sys, os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
-from stack import Stack
+from stack import stack
 import calc
 
 print("연동 테스트파일입니다.")
@@ -18,5 +18,5 @@ print(c,d,f)
 
 test_data = list(input("스택을 이용해 연산 숫서 결정하기위한 함수 테스팅 입력 예) (2+3)*4:" ))
 infix = calc.Operands(test_data)
-postfix = Stack.InToPost(infix)
-print(Stack.InToPost(infix))
+postfix = stack.InToPost(infix)
+print(stack.InToPost(infix))
