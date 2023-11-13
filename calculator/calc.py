@@ -1,6 +1,8 @@
 import sys, os
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 
+priority = {'(': 1, ')': 1, '+': 2, '-': 2, '*': 3, '/': 3}
+
 def plus(a,b):
   try:
     a = int(a)
@@ -34,7 +36,6 @@ def multi(a,b):
 def Operands(infix):
   numbers = list('0123456789.')
   recognized = []
-
   i = 0
   while i < len(infix):
     j = 1
