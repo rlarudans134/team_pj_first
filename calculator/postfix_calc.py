@@ -1,4 +1,4 @@
-from Stack import Stack
+from Stack import Stack, priority
 
 priority = {'(': 1, ')': 1, '+': 2, '-': 2, '*': 3, '/': 3}
 
